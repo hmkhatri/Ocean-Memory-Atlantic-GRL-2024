@@ -1,0 +1,81 @@
+#!/bin/bash
+# SBATCH --partition=par-multi 
+# SBATCH --partition=par-single
+# SBATCH --partition=test
+# SBATCH --ntasks=16
+# SBATCH --partition=high-mem
+#SBATCH --mem=4GB
+#SBATCH --partition=short-serial
+# SBATCH --partition=short-serial-4hr
+# SBATCH --account=short4hr 
+#SBATCH -o %j.out 
+#SBATCH -e %j.err
+#SBATCH --time=23:00:00
+
+# load python3 module
+
+source /home/users/hkhatri/miniconda3/bin/activate
+
+# Execute python script
+
+
+# mpirun python Compute_AMV_Heat_Content.py 
+
+# srun python Compute_NAO_SLP.py
+
+# srun python Compute_AMV_NAO_Historical.py
+
+# srun python Compute_Jet_Indices.py
+
+
+# srun python Composites_SST_NAO.py
+
+# srun python Composites_Heat_Content_NAO.py
+
+# srun python Composite_SST_consecutive_NAO.py
+
+# srun python Composites_SST_Heat_Content_NAO_cmip_historical.py
+
+# srun python Compute_SST_Heat_Content_NAO_Observations.py
+
+
+
+# srun python Response_Function.py
+
+# srun python Response_Function_cmip_historical.py
+
+# srun python Response_Function_Composites_Observations.py
+
+# srun python Response_Function_Jet_Indices_picontrol.py
+
+# srun python Response_Function_Jet_Indices_historical.py
+
+
+# srun python Annual_maps_observations.py
+
+# mpirun python Annual_maps_SST_piControl.py
+
+
+# srun python Parameter_tau_beta.py
+
+# srun python Parameter_tau_beta_piControl.py
+
+# srun python Parameter_tau_beta_historical.py
+
+# srun python Parameter_tau_beta_observations_1850_2021.py
+
+
+# srun python Correlations_piControl.py
+
+srun python Correlations_historical.py
+
+# srun python Correlations_parameter_tau_beta_observations.py
+
+# srun python Prediction_data_composite_hist.py
+
+# srun python Prediction_data_composite_observations.py
+
+# srun python Correlations_Parameter_tau_beta_historical_Jet_Indices.py
+
+
+# srun python Compute_cell_volume.py
