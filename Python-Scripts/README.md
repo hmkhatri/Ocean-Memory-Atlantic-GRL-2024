@@ -1,6 +1,6 @@
 ## Python Scripts
 
-Scripts used for observations, historical simulations and picontrol simulation are split into three separate directories. [sbatch_job_submit](./sbatch_job_Submit) is for submitting jobs on [JASMIN](https://jasmin.ac.uk). Below is a short description of different scripts.
+Scripts used for observations, historical simulations and picontrol simulation are split into three separate directories. [sbatch_job_submit](./sbatch_job_submit) is for submitting jobs on [JASMIN](https://jasmin.ac.uk). Below is a short description of different scripts.
 
 | Script Name Structure | Content |
 | --- | --- | 
