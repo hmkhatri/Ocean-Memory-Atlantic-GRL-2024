@@ -4,4 +4,4 @@ The repository contains scripts for analysis of decadal variability in ocean tem
 
 Python scripts for computing diagnsotics are in [Python-Scripts](./Python-Scripts) and plotting notebooks are in [Plots](./Plots). Post-processed data required for creating figures can be downloaded from [https://doi.org/10.5281/zenodo.13306349](https://doi.org/10.5281/zenodo.13306349). 
 
- 
+A tutorial on creating NAO-based composites, which are used to identify an appropriate form of the linear response (or Green) function for temperature anomalies, is avaiable in [NAO-SST-Composite](./Tutorials/NAO-SST-Composite.ipynb). The same approach also applies to other ocean diagnostics, see [Khatri et al. (2022)](https://doi.org/10.1029/2022GL101480).  
